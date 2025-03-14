@@ -1,0 +1,234 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(174, 226, 248);
+    padding-top: 3vh;
+}
+
+/* header */
+
+.container-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-content {
+    width: 6.5%;
+    height: auto;
+}
+
+
+/* title */
+
+.title {
+    padding-left: 2%;
+}
+
+.li-title1 {
+    list-style-type: none;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-size: clamp(0.1rem, 0.8vw + 0.6rem, 2rem);
+    color: rgb(79, 86, 127)
+}
+
+.li-title2 {
+    list-style-type: none;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: clamp(0.1rem, 1vw + 0.8rem, 2rem);
+    color: rgb(79, 86, 127)
+}
+
+.li-title3 {
+    list-style-type: none;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: clamp(0.1rem, 1vw + 0.6rem, 2rem);
+    color: rgb(79, 86, 127)
+}
+
+/* daftar akun */
+
+.container-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.container-menu-log {
+    border: none;
+    border-radius: 30px;
+    padding: 15px;
+    background-color: rgb(118, 132, 209);
+    width: 40%;
+    height: auto;
+    box-sizing: border-box;
+    box-shadow: 0 0 20px -5px rgb(79, 86, 127);
+}
+
+.con-signup-signin {
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(0.1rem, 1vw + 1rem, 2rem);
+    font-weight: bold;
+}
+
+.signup-signin {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.btn-signup {
+    color: rgb(174, 226, 248);
+    list-style: none;
+}
+
+.daftar-nama {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    color: white;
+    font-size: clamp(0.1rem, 1vw + 0.6rem, 2rem);
+}
+
+.karakter {
+    display: flex;
+    justify-content: center;
+    font-size: clamp(0.1rem, 0.8vw + 0.6rem, 1rem);
+    font-weight: 400;
+}
+
+.register-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 9px;
+
+}
+
+.register-btn-btn {
+    background-color: rgb(174, 226, 248);
+    color: rgb(79, 86, 127);
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: clamp(0.1rem, 1vw + 0.6rem, 2rem);
+    padding: 7px;
+    padding-left: 20%;
+    padding-right: 20%;
+    border: none;
+    border-radius: 17px;
+    cursor: pointer;
+    margin: 0;
+}
+
+.register-btn-btn:hover {
+    background-color: rgb(79, 86, 127);
+    color: rgb(139, 155, 249);
+    transition-duration: .3s;
+    transition-delay: .1s;
+}
+
+input[type=email], input[type=password], input[type=username] {
+    text-align: center;
+    width: 95%;
+    padding: 12px 20px;
+    margin: 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-sizing: border-box;
+    font-size: clamp(0.1rem, 1vw + 0.6rem, 2rem);
+}
+
+/* copyright */
+.container-footer {
+    width: 100%;
+    text-align: center;
+}
+
+.li-co {
+    list-style-type: none;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-size: 15px;
+    color: rgb(79, 86, 127);
+}
+
+@media screen and (min-width: 100px) and (max-width: 400px) {
+    .img-content {
+        width: 14%;
+    }
+    .container-menu-log {
+        width: 70%;
+    }
+    .li-co {
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 1000px) {
+    .img-content {
+        width: 9%;
+    }
+    .container-menu-log {
+        width: 50%;
+    }
+    .li-co {
+        font-size: 13px;
+    }
+}
+
+
+@media screen and (min-width: 1200px) and (max-width: 1300px) {
+    .img-content {
+        width: 7%;
+    }
+
+    .container-menu-log {
+        width: 50%;
+    }
+}
+
+/* Tampilan latar belakang loading */
+#loading-screen {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    visibility: hidden; /* Tersembunyi secara default */
+  }
+
+  /* Animasi loader */
+  .loader {
+    border: 8px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 8px solid #3498db;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+  }
+
+  /* Efek animasi berputar */
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+

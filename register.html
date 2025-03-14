@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Register</title>
+         <!-- Cool Google Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Itim&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <!-- Our stylesheet -->
+        <link rel="stylesheet" type="text/css" href=".css/register.css">
+    </head>
+    <body>
+
+        <!-- header -->
+        <div class="container-header">
+            <img src="img/logo abu dzar-01.png" class="img-content" />
+
+            <!-- title -->
+            <div class="title">
+                <li class="li-title1">Database</li>
+                <li class="li-title2">Sertifikasi Tahfizh</>
+                <li class="li-title3">SD Islam Abu Dzar</li>
+            </div>
+        </div>
+
+        <div class="container-menu">
+                <div class="container-menu-log">
+
+                <!-- Daftar & Masuk-->
+                    <div>
+                        <form onsubmit="return false;" class="con-signup-signin">
+                            <div class="signup-signin">
+                                <li class="btn-signup">Daftar User</li>
+                                    <div id="loading-screen">
+                                        <div class="loader"></div>
+                                    </div>
+                            </div>
+                            <div class="daftar-nama">
+                                <input type="email" id="email" placeholder="Email">
+                            </div>
+                            <div class="daftar-nama">
+                                <input type="password" id="password" placeholder="Password">
+                            </div>
+                            <div class="karakter">Password 123456</div>
+                            <div class="register-btn">
+                                <button class="register-btn-btn" onclick="register()">Register</button>
+                                
+                            </div>
+                        </form>
+                    </div>
+                </div>
+        </div>
+
+        <!-- copyright -->
+    
+        <footer class="container-footer">
+            <li class="li-co">@copyright 2024</li>
+        </footer>
+    </body>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+
+        <!-- Our script must be loaded after firebase references -->
+        <script src=".js/register.js"></script>
+
+</html> 
