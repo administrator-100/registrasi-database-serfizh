@@ -133,6 +133,7 @@ body {
 .li-co {
     font-size: 12px;
     color: var(--color-4);
+    list-style: none;
 }
 
 @media screen and (min-width: 100px) and (max-width: 400px) {
