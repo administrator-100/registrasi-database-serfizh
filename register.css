@@ -151,7 +151,7 @@ body {
     }
     
     .container-register {
-        width: 310px;
+        width: 300px;
         margin-top: -20px;
         margin-bottom: -20px;
     }
@@ -176,6 +176,7 @@ body {
     
     .li-co {
         font-size: 12px;
+        list-style: none;
     }
 }
 
